@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 20px;
+
+  //Button-Control
+  .buttonControlWrapper-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    .button-control-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+
+      button {
+        background-color: #5476ac;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        opacity: 70%;
+        border-radius: 5px;
+        color: white;
+        white-space: nowrap;
+
+        &:hover {
+          opacity: 90%;
+        }
+      }
+
+      input {
+        font-size: 16px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        outline: none;
+      }
+
+      input:focus {
+        border: 1px solid #8d8d8d;
+      }
+    }
+  }
+
+  //Autocomplete-Control
+  .autocompleteControlWrapper-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 500px;
+
+    .form-container {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: solid #5476ac 1px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      align-self: flex-start;
+
+      input {
+        font-size: 16px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 80%;
+        outline: none;
+      }
+      input:focus {
+        border: 1px solid #8d8d8d;
+      }
+
+      .autocomplete-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        overflow-y: auto;
+        margin-bottom: 10px;
+
+        .autocomplete-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        img {
+          width: 30px;
+          height: 20px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
